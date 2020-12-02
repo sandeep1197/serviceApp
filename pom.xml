@@ -173,7 +173,7 @@
    		<properties>
    		<!-- Optional URL to server. Default value is http://localhost:9000 -->
     		<sonar.host.url>
-      			http://ec2-3-21-106-238.us-east-2.compute.amazonaws.com:9000/
+      			http://ec2-100-25-199-97.compute-1.amazonaws.com:9000/
     		</sonar.host.url>
    		</properties>
   		</profile>
