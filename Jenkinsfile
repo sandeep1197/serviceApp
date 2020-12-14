@@ -33,5 +33,10 @@ pipeline {
               archiveArtifacts '**/**/*.war'
           }
       }
+    stage ('Create Docker image for ServiceApp'){
+          steps{
+              sh 'docker build -t serviceapp -f sm-shop/Dockerfile .'
+          }
+      }
     }
 }
