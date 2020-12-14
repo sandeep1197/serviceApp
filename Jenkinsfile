@@ -35,7 +35,7 @@ pipeline {
       }
     stage ('Create Docker image for ServiceApp'){
           steps{
-              sh 'sudo docker build -t serviceapp -f sm-shop/Dockerfile .'
+              sh 'docker build -t serviceapp -f sm-shop/Dockerfile .'
           }
       }
     }
