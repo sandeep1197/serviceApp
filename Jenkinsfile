@@ -5,10 +5,7 @@ pipeline {
 	jdk 'MyJava'
 	git 'Default'
   }
-  options {
-    timestamps()
-    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '5', numToKeepStr: '5'))])
- }
+  
   stages {
     stage ('Jenkins path') {
 	 steps {
